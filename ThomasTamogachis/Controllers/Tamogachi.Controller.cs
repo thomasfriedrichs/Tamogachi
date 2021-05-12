@@ -38,6 +38,13 @@ namespace ThomasTamogachis.Controllers
       return View(currentTamogachi);
     }
 
+    [HttpPost]
+    public ActionResult Index(Tamogachi tamogachis)
+    {
+      this.Hunger +=10;
+      return View(tamogachis);
+    }
+
     // Edit name
 
     // [HttpGet("/tamogachis/{id}/edit")]
