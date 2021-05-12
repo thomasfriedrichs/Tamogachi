@@ -1,0 +1,24 @@
+Controllers:
+  HomeController.cs
+  TamogachiController.cs
+
+Models:
+  need a class called Tamogachi
+    class should have properties for hunger/food, attention/social interaction, and sleep
+
+Views:
+  Home
+    home index (home page)
+  Tamogachi
+    Index (page with list of Tamogachis)
+    New (offers form for new Tamogachi)
+    Create (sends form to server to create new Tamogachi)
+    Show (detail page w Tamogachi details, maybe passage of time and buttons for feeding, etc.)
+    Edit (maybe detail page instead of Show to deal with Tamogachi interaction?)
+    Update (sends updates of Tamogachi to server)
+    Destroy (deletes Tamogachi)
+
+Project files:
+  Program.cs
+  Startup.cs
+  Tamogachi.csproj
