@@ -1,0 +1,32 @@
+@using ThomasTamogachis.Models
+
+<h1>Thomas's Tamogachis</h1>
+  @if (Model.Count > 0)
+  {
+    <ol>
+    @foreach (Tamogachi tamogachi in Model)
+    {
+      <li>
+        <ul>
+          <h1>@tamogachi.Name</h1>
+          <li>Hunger: @tamogachi.Hunger 
+            <form>
+              <button type="button" onclick="location.href='@Url.Action("MyAction", "MyController")'" />
+            </form> 
+          </li>
+          <li>Play: @tamogachi.Play <a class="btn btn-success">Socialize</a></li> 
+          <li>Sleep: @tamogachi.Sleep <a class="btn btn-success">Go to bed</a></li>
+        </ul>
+      </li>
+    }
+    </ol>
+  } 
+  else 
+  {
+    <p>Thomas has no Tamogachis yet!</p>
+  }
+
+
+<a href="/items/new">Add a new item.</a>
+
+<!-- <button type="" name="" action="" method=""> -->
