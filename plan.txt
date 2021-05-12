@@ -22,3 +22,13 @@ Project files:
   Program.cs
   Startup.cs
   Tamogachi.csproj
+
+How should we structure our server interactions?
+  User creates a Tamogachi by submitting form (POST)
+  User selects a Tamogachi from a list to interact with (GET)
+  User interacts with a Tamogachi at a specific route
+    Change level of hunger by feeding (PATCH)
+    Change level of play by playing (PATCH)
+    Change level of sleep by putting to sleep (PATCH)
+    User clicks to return to list (PATCH)
+
