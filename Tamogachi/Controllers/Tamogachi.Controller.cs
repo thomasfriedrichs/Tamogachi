@@ -45,7 +45,11 @@ namespace Tamogachi.Controllers
       return View();
     }
 
+    [HttpPatch("/tamogachis/{id}/edit")]
+
     // Update
+
+    
 
     // Destroy
 

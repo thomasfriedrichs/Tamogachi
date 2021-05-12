@@ -1,1 +1,35 @@
 @using Tamogachi.Models
+
+<html>
+<h1>Thomas's Tamogachis</h1>
+  @if (tamogachi.Count > 0)
+  {
+    <ol>
+    @foreach (Tamogachi tamogachi in Model)
+    {
+      <li>
+        <ul>
+          <h1>@tamogachi.Name</h1>
+          <li>Hunger: @tamogachi.Hunger</li>
+          <li>Play: @tamogachi.Play</li>
+          <li>Sleep: @tamogachi.Sleep</li>
+        </ul>
+      </li>
+    }
+    </ol>
+  } 
+  else 
+  {
+    <p>Thomas has no Tamogachis yet!</p>
+  }
+
+
+<a href="/items/new">Add a new item.</a>
+
+
+</html>
+
+
+
+
+
