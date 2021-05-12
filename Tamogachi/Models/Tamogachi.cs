@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Tamogachi.Model 
+namespace Tamogachi.Models
 {
   class Tamogachi
   {
@@ -9,13 +9,15 @@ namespace Tamogachi.Model
     public int Play { get; set; }
     public int Sleep { get; set; }
     public int Id { get; }
+    public string Name { get; set; }
     private static List<Tamogachi> tamogachis = new List<Tamogachi> { };
 
-    public static void Tamogachi (int hunger, int play, int sleep)
+    public static void Tamogachi (string name)
     {
-      Hunger = hunger;
-      Play = play;
-      Sleep = sleep;
+      Hunger = 20;
+      Play = 20;
+      Sleep = 20;
+      Name = name;
       tamogachis.Add(this);
       Id = tamogachis.Count;
     }
